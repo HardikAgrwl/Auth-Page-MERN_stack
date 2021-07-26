@@ -22,3 +22,7 @@ In frontend directory , run
 ### `npm install`
 
 ### `npm run dev`
+<br/>
+login credentials : <br/>
+email : john@example.com <br/>
+pwd : john1234 <br/>
