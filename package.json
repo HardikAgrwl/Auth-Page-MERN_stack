@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  },
+  "name": "authenticator",
+  "version": "1.0.0",
+  "description": "Authentication page",
+  "main": "server.js",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/passport": "^1.0.7",
+    "@types/passport-jwt": "^3.0.6",
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  },
+  "type": "module",
+  "scripts": {
+    "client-install": "npm install --prefix frontend",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Hardik",
+  "license": "ISC"
+}
